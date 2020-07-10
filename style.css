@@ -1,0 +1,106 @@
+body {
+  background-color: #95b9b7;
+  margin: 0;
+  overflow: hidden;
+}
+
+.wrapper {
+  display: block;
+  margin: auto;
+  width: 100vw;
+  height: calc((989/1958)*100vw);
+}
+
+@media (min-aspect-ratio: 1958/989) {
+  .wrapper {
+    height: 100vh;
+    width: calc((1958/989)*100vh);
+  }
+}
+
+.wrapper .image-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.wrapper img#background {
+  width: 100%;
+}
+
+.wrapper img {
+  position: absolute;
+}
+
+.wrapper img#camera-body {
+  width: 76.86%;
+  left: 12.25%;
+  top: 13.25%;
+}
+
+.wrapper img#tripod {
+  width: 11.03%;
+  top: 84.34%;
+  left: 49.96%;
+}
+
+.wrapper img#left-hand {
+  width: 18.99%;
+  top: 60.05%;
+  left: -1.07%;
+}
+
+.wrapper img#right-hand {
+  width: 22.22%;
+  top: 27.91%;
+  left: 80.85%;
+}
+
+#logo-wrapper {
+  width: 19%;
+  height: calc(14.86% - 20px);
+  left: 12.26%;
+  top: 15.77%;
+  position: absolute;
+  background-color: white;
+  border-radius: 10px;
+  opacity: 0.9;
+  padding: 0.8% 1.6%;
+}
+
+#logo-wrapper #logo {
+  width: 18%;
+  position: relative;
+}
+
+#logo-wrapper #logo-text {
+  font-size: 3vw;
+}
+
+#flag-wrapper {
+  position: absolute;
+  width: 2.3%;
+  height: 31.24%;
+  left: 69.05%;
+  top: 44.59%;
+  display: flex;
+  flex-direction: column;
+}
+
+#flag-wrapper a {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 46.67%;
+}
+
+#side-screen {
+  position: absolute;
+  width: 24.26%;
+  height: 34.07%;
+  left: 13.18%;
+  top: 46.51%;
+  background: black;
+  opacity: 0.5;
+}
